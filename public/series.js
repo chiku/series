@@ -7,7 +7,7 @@ $(function() {
             width: 1200
         },
         title: {
-            text: 'Average time to insert data'
+            text: 'Shuffle operations'
         },
         subtitle: {
             text: '<a href="https://github.com/chiku/shuffle-operations">https://github.com/chiku/shuffle-operations</a>'
