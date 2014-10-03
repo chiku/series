@@ -1,0 +1,44 @@
+$(function() {
+    $('#container').highcharts({
+        chart: {
+            type: 'scatter',
+            zoomType: 'xy',
+            height: 800,
+            width: 1200
+        },
+        title: {
+            text: 'Average time to insert data'
+        },
+        subtitle: {
+            text: '<a href="https://github.com/chiku/shuffle-operations">https://github.com/chiku/shuffle-operations</a>'
+        },
+        xAxis: {
+            title: {
+                text: 'Size'
+            },
+            tickInterval: 500
+        },
+        yAxis: {
+            title: {
+                text: 'Time (ms)'
+            },
+            min: 0
+        },
+        plotOptions: {
+            scatter: {
+                dataLabels: {
+                    enabled: false
+                },
+                marker: {
+                    radius: 1
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Operations',
+            data: {{ data }},
+            animation: false
+        }]
+    });
+});
