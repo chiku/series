@@ -15,6 +15,7 @@ public class ShuffleOperationsTest {
         ShuffleOperations operations = new ShuffleOperations(5);
         operations.shuffle();
         HashMap<String, String> result = operations.result();
-        assertThat(result.get("data"), is(equalTo("[[1, 1], [2, 2], [3, 2], [4, 3], [5, 3]]")));
+        assertThat(result.get("prime"), is(equalTo("[[2, 2], [3, 2], [5, 3]]")));
+        assertThat(result.get("nonPrime"), is(equalTo("[[1, 1], [4, 3]]")));
     }
 }
