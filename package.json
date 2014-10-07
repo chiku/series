@@ -1,0 +1,14 @@
+{
+  "name": "Series",
+  "author": "Chirantan Mitra <chirantan.mitra@gmail.com>",
+  "description": "A graphical representation of a series",
+  "license": "MIT",
+  "version": "0.1.0",
+  "dependencies": {
+    "node-static": "~0.7.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/chiku/series.git"
+  }
+}
