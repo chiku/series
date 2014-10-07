@@ -20,7 +20,7 @@ $(function() {
         },
         yAxis: {
             title: {
-                text: 'Time (ms)'
+                text: 'Operations (count)'
             },
             min: 0
         },
